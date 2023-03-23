@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import React,{useEffect, useState} from 'react'
+import Display from './components/Display/Display';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<div className='App'>
+
+<Watch></Watch>
+
+</div>
   );
+}
+
+const Watch = ()=>{
+	const [steps, setSteps]= useState(0)
+	const increaseStep = () =>{
+		const newStepCount = steps +1;
+		setSteps(newStepCount)
+
+
+	}
+
+	useEffect(()=>	console.log('useEffect:',steps),[])
+
+	return(
+		<div>
+			<h1>Steps: {steps}</h1>
+			<button className='btn btn-outline-secondary  btn-app' onClick={increaseStep}>Submit</button>
+			<Display name={'Bosch'} steps={steps}>t</Display>
+
+		</div>
+	)
 }
 
 export default App;

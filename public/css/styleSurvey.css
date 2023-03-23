@@ -1,0 +1,32 @@
+
+p{
+    font-size:30px;
+}
+label{
+    font-size: 20px;
+}
+
+
+
+
+
+.active-pink-textarea.md-form label.active {
+    color: #0cbbf0;
+  }
+  .pink-textarea textarea.md-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #0cbbf0;
+    box-shadow: 0 1px 0 0 #0cbbf0;
+  }
+  .pink-textarea.md-form .prefix.active {
+    color: #0cbbf0;
+  }
+  .active-pink-textarea.md-form textarea.md-textarea:focus:not([readonly])+label {
+    color: #0cbbf0;
+  }
+  
+ 
+  
+
+
+  
+  

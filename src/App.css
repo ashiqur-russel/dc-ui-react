@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+
+.btn-app{
+  transition: transform .6s .25s ease-in; /* apply transition property to the object (div element) that will be transitioning and set the value to the property to transition */
+
+}
+
+.btn-app:hover{
+  background: #ff2424;
+transform:scale(.9);
+}
