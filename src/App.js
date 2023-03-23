@@ -1,7 +1,7 @@
 import './App.css';
 import React,{useEffect, useState} from 'react'
 import Display from './components/Display/Display';
-
+import DcHeader from './components/DcHeader/DcHeader';
 function App() {
   return (
 <div className='App'>
@@ -25,6 +25,7 @@ const Watch = ()=>{
 
 	return(
 		<div>
+<DcHeader/>
 			<h1>Steps: {steps}</h1>
 			<button className='btn btn-outline-secondary  btn-app' onClick={increaseStep}>Submit</button>
 			<Display name={'Bosch'} steps={steps}>t</Display>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DcHeader = () => {
+ const DcHeader = () => {
 
    // $('module-pi-header').modulePiHeader();
 
